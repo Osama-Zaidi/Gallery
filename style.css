@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    padding-top: 5px;
+}
+
+.content {
+    background-color: beige;
+    border: solid 5px black;
+    max-width: 1000px;
+    padding: 50px;
+    margin: auto;
+    
+
+}
+
+.grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90vh;
+}
+
+.cell {
+    background-color: grey;
+    margin: 5px;
+    overflow: hidden;
+    
+}
+
+#div1 {
+    grid-row: 1/span 2;
+}
+
+#div7 {
+    grid-column: 2/span 2;
+}
+
+/* setting images */
+#div1 {
+    background-image: url('./images/1.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div2 {
+    background-image: url('./images/2.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div3 {
+    background-image: url('./images/3.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div4 {
+    background-image: url('./images/4.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div5 {
+    background-image: url('./images/5.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div6 {
+    background-image: url('./images/6.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div7 {
+    background-image: url('./images/7.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.readMore {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+    cursor: pointer;
+
+}
